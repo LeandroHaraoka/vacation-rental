@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 using VacationRental.Domain.Entities;
 using Xunit;
@@ -30,6 +28,7 @@ namespace VacationRental.Api.Tests.Domain
 
         [InlineData(5, 1, 2023, 01, 12)]
         [InlineData(5, 1, 2023, 01, 07)]
+        [InlineData(0, 1, 2023, 01, 10)]
         [Theory]
         public async Task GivenDateRange_ThenShouldReturnNotAvailable(int preparationTime, int nights, int year, int month, int day)
         {

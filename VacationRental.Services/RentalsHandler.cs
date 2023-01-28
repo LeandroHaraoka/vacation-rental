@@ -54,7 +54,7 @@ namespace VacationRental.Services
                 var bookingRelocated = TryRelocateBooking(unitManagers, booking, newPreparationTime);
                 if (bookingRelocated is false)
                 {
-                    throw new Exception("Overlapping between existing bookings and/or preparation times occured.");
+                    throw new ApplicationException("Overlapping between existing bookings and/or preparation times occured.");
                 }
             }
 
