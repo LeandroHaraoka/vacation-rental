@@ -1,8 +1,8 @@
 ﻿using System;
-using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
-using VacationRental.Api.Models;
+using VacationRental.Domain.Entities;
+using VacationRental.Services.Models;
 using Xunit;
 
 namespace VacationRental.Api.Tests
@@ -36,6 +36,7 @@ namespace VacationRental.Api.Tests
             {
                  RentalId = postRentalResult.Id,
                  Nights = 3,
+                 Unit = 1,
                  Start = new DateTime(2001, 01, 01)
             };
 
@@ -76,6 +77,7 @@ namespace VacationRental.Api.Tests
             {
                 RentalId = postRentalResult.Id,
                 Nights = 3,
+                Unit = 1,
                 Start = new DateTime(2002, 01, 01)
             };
 
@@ -88,6 +90,7 @@ namespace VacationRental.Api.Tests
             {
                 RentalId = postRentalResult.Id,
                 Nights = 1,
+                Unit = 1,
                 Start = new DateTime(2002, 01, 02)
             };
 
