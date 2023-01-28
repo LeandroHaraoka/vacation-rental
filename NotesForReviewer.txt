@@ -1,0 +1,3 @@
+OBS1: I don't think the ideal solution should throw exception at controller level. So, insted of exceptions, i would include try-catch blocks and in case of errors, i would
+return an adequate HttpStatusCode (BadRequest, InternalServerError) with a friendly message. I didn't implemented this because it was said to not change the API contracts.
+I would need to change the controller methods return, so I keep as is.
