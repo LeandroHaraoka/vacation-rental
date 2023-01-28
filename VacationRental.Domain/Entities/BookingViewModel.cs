@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 
 namespace VacationRental.Domain.Entities
 {
@@ -15,7 +14,7 @@ namespace VacationRental.Domain.Entities
 
         public bool IsDateRangeAvailable(int preparationTime, DateTime startDate, int nights)
         {
-            var endDate = startDate.AddDays(Nights + preparationTime).Date;
+            var endDate = startDate.AddDays(nights + preparationTime).Date;
             var bookingStartDate = Start.Date;
             var bookingEndDate = Start.AddDays(Nights + preparationTime).Date;
 

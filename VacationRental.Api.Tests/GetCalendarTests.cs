@@ -51,7 +51,7 @@ namespace VacationRental.Api.Tests
             {
                 RentalId = postRentalResult.Id,
                 Nights = 2,
-                Unit = 1,
+                Unit = 2,
                 Start = new DateTime(2000, 01, 03)
             };
 
